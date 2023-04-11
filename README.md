@@ -33,7 +33,7 @@ POST /feedback - Submits a new customer feedback item
 
 ## License
 
-License information for the project.
+GPL 2.0 License. 
 
 ## Security
 This API uses a two-tier encryption approach to ensure that customer feedback data is protected at all times. The first tier is a data encryption key (DEK) that is generated for each customer based on their email address. The DEK is then encrypted using a master encryption key (MEK) stored in Azure Key Vault. When a customer submits feedback, the API uses their DEK to encrypt the feedback data before storing it in the database. When feedback is retrieved, the API uses the customer's DEK and the MEK to decrypt the feedback data and return it in plain text.
